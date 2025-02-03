@@ -120,7 +120,7 @@ function App() {
               <h2 className="font-[Recoleta] flex-1 text-xl font-bold">Requeteur snowflakes</h2>
               <p className="text-lg mt-4 text-center">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam iure ducimus, commodi dolor, accusamus non minus excepturi deleniti deserunt eligendi voluptate adipisci omnis et velit facilis tempora. Rem, ab at?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorum beatae facere ipsum quidem quia similique voluptatum! Harum consequuntur repellendus aut, inventore natus sunt, quasi quae quo vero id ullam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorum beatae facere ipsum quidem quia similique voluptatum! Harum consequuntur repellendus aut, inventore natus sunt, quasi quae quo vero id ullam! test
               </p>
             </div>
             </div>
