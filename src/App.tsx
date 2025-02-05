@@ -31,10 +31,10 @@ function App() {
         {/* Contenu principal */}
         <div
           id="about"
-          className="flex flex-col lg:flex-row w-full items-center lg:mt-15 sm mt-20 sm:mt-5"
+          className="flex flex-col lg:flex-row w-full items-center lg:mt-15     mt-20 sm:mt-5"
         >
           {/* Colonne gauche (Photo) */}
-          <div className="flex-1 flex justify-center  lg:flex-col items-center w-full  space-y-10">
+          <div className="flex-1 flex justify-center  mb-5  lg:flex-col items-center w-full  space-y-10">
             <div className="w-40 h-40  sm:w-56 sm:h-56 md:w-50 md:h-50 rounded-full overflow-hidden shadow-md    flex justify-center items-center ">
               <img
                 src="/Lucas Zubiarrain.jpg"
@@ -150,9 +150,9 @@ function App() {
               Automatisation Chargement Alteryx Oracle
             </h3>
             <p className="text-sm text-center mt-2">
-              Développement de processus automatisés pour extraire, transformer
-              et charger des données en utilisant des outils cloud et des API
-              tierces.
+              Automatisation des chargements de données d'Alteryx vers Oracle
+              avec mise en place d'un système de monitoring sur Power BI pour
+              assurer la fiabilité et la gestion des erreurs.
             </p>
             <div className="flex flex-wrap justify-center items-center gap-3 mt-4">
               <img src="/icons/python.svg" alt="Python" className="h-6" />
@@ -199,7 +199,7 @@ function App() {
               Vous souhaitez échanger sur vos projets ou en savoir plus sur moi
               ? N'hésitez pas à me contacter !
             </p>
-            <div className="flex justify-center space-x-10">
+            <div className="grid grid-cols-2 gap-10 sm:grid-cols-2 lg:grid-cols-4">
               {/* GitHub Icon */}
               <a
                 href="https://github.com/lucaszub"
