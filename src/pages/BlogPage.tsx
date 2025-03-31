@@ -1,21 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { loadMarkdownFiles, BlogPost } from "../utils/loadMarkdown";
 
-interface BlogPost {
-  id: number;
-  imageSrc: string;
-  title: string;
-  excerpt: string;
-  date: string;
-  author: string;
-  category: string;
-}
+const BlogPage: React.FC = () => {
+  const [posts, setPosts] = React.useState<BlogPost[]>([]);
 
-interface BlogPageProps {
-  posts: BlogPost[];
-}
+  React.useEffect(() => {
+    loadMarkdownFiles().then((fetchedPosts) => {
+      setPosts(fetchedPosts);
+    });
+  }, []);
 
-const BlogPage: React.FC<BlogPageProps> = ({ posts }) => {
   return (
     <section id="blog-page" className="bg-gray-50 py-20">
       <div className="container mx-auto px-6">

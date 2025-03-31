@@ -18,6 +18,10 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = ({ blogPosts }) => {
+  if (blogPosts.length === 0) {
+    return <div className="text-center py-20">Chargement des articles...</div>;
+  }
+
   return (
     <main>
       <Hero />

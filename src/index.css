@@ -20,4 +20,11 @@
   --color-accent-800: #115e59;
   --color-accent-900: #134e4a;
   --color-accent-950: #042f2e;
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  --color-heading: var(--color-midnight);
+  --color-text: var(--color-tahiti);
+  --color-link: var(--color-bermuda);
+  --color-link-hover: var(--color-button-hover);
 }

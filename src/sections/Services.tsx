@@ -9,12 +9,12 @@ const Services: React.FC = () => {
       icon: Code,
       title: "Développement Web Front-end",
       description:
-        "Création d'interfaces utilisateur interactives et responsives avec React, Vue, etc.",
+        "Création d'interfaces utilisateur interactives et responsives avec React",
       link: "/services/frontend",
     },
     {
       icon: Server,
-      title: "Développement Web Back-end",
+      title: "Développement d'Api Personnalisées",
       description:
         "Mise en place de logiques serveur robustes, API RESTful (Node.js, Python, etc.).",
       link: "/services/backend",
