@@ -7,17 +7,10 @@ const Services: React.FC = () => {
   const servicesData = [
     {
       icon: Code,
-      title: "Développement Web Front-end",
+      title: "Développement de site web personnaliés",
       description:
-        "Création d'interfaces utilisateur interactives et responsives avec React",
+        "Création d'interfaces utilisateur interactives et responsives pour votre activitées",
       link: "/services/frontend",
-    },
-    {
-      icon: Server,
-      title: "Développement d'Api Personnalisées",
-      description:
-        "Mise en place de logiques serveur robustes, API RESTful (Node.js, Python, etc.).",
-      link: "/services/backend",
     },
     {
       icon: Cpu,
@@ -25,6 +18,13 @@ const Services: React.FC = () => {
       description:
         "Optimisation de processus et développement de solutions complètes, de la conception au déploiement.",
       link: "/services/automation",
+    },
+    {
+      icon: Server,
+      title: "Développement d'Api Personnalisées",
+      description:
+        "Mise en place de logiques serveur robustes, API RESTful (Node.js, Python, etc.).",
+      link: "/services/backend",
     },
   ];
 

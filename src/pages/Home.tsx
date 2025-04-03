@@ -36,7 +36,7 @@ const Home: React.FC<HomeProps> = ({ blogPosts }) => {
               <a
                 href={`/blog/${post.id}`}
                 key={post.id}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 flex flex-col"
+                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col"
               >
                 <img
                   src={post.imageSrc}

@@ -15,7 +15,7 @@ export const loadMarkdownFiles = async (): Promise<BlogPost[]> => {
   const posts: BlogPost[] = [];
 
   for (const file of postFiles) {
-    const response = await fetch(`/post/${file}`); // Corrigez le chemin ici
+    const response = await fetch(`/post/${file}`);
     const text = await response.text();
     const { data, content } = matter(text);
 

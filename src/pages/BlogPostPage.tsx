@@ -29,11 +29,7 @@ const BlogPostPage: React.FC = () => {
   return (
     <div className="container mx-auto px-6 py-12">
       <h1 className="text-3xl font-bold text-gray-900 mb-6">{post.title}</h1>
-      <img
-        src={post.imageSrc}
-        alt={`Image pour ${post.title}`}
-        className="w-full h-64 object-cover rounded-lg mb-6"
-      />
+
       <p className="text-gray-600 mb-4">
         <strong>Publié le :</strong> {post.date}
       </p>
@@ -46,22 +42,41 @@ const BlogPostPage: React.FC = () => {
           rehypePlugins={[rehypeRaw]}
           components={{
             img: ({ node, ...props }) => (
-              <img {...props} className="max-w-3xl mx-auto rounded-lg my-4" />
+              <img
+                {...props}
+                className="w-full max-h-80 object-cover mb-6 mx-auto rounded-lg shadow-lg"
+              />
             ),
             h1: ({ node, ...props }) => (
-              <h1 className="text-3xl font-bold mb-4" {...props} />
+              <h1
+                className="text-3xl font-bold text-gray-900 mb-6"
+                {...props}
+              />
             ),
             h2: ({ node, ...props }) => (
-              <h2 className="text-2xl font-semibold mb-3" {...props} />
+              <h2
+                className="text-3xl font-bold text-gray-800 mb-4"
+                {...props}
+              />
             ),
             h3: ({ node, ...props }) => (
-              <h3 className="text-xl font-medium mb-2" {...props} />
+              <h3
+                className="text-2xl font-semibold text-gray-700 mb-3"
+                {...props}
+              />
             ),
-            p: ({ node, ...props }) => <p className="mb-4" {...props} />,
+            p: ({ node, ...props }) => (
+              <p className="text-gray-800 leading-relaxed mb-4" {...props} />
+            ),
             ul: ({ node, ...props }) => (
-              <ul className="list-disc list-inside mb-4" {...props} />
+              <ul
+                className="list-disc list-inside text-gray-600 mb-4"
+                {...props}
+              />
             ),
-            li: ({ node, ...props }) => <li className="ml-4" {...props} />,
+            li: ({ node, ...props }) => (
+              <li className="ml-6 text-lg leading-relaxed" {...props} />
+            ),
           }}
         >
           {post.content}
